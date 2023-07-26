@@ -10,7 +10,6 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #E3E3E3;
 }
 
 html {
@@ -25,11 +24,18 @@ img {
 }
 
 .container{
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1500px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--pading-container);
+}
+
+.container2{
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .hero{
@@ -41,7 +47,13 @@ img {
     display: grid;
     grid-template-rows: 100px 1fr;
     color: #999494;
+
     
+}
+
+.contact{
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .hero::before{
@@ -51,10 +63,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0303038c 0%, #0505058c 100%), url(../images/cabecera1.jpeg);
+    background-image: linear-gradient(180deg, #0303038c 0%, #0505058c 100%), url(img.png);
     background-size: cover;
-    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 80% 95%, 50% 95%, 20% 95%, 0% 100%, 0% 35%, 0 0);
     z-index: -1;
+
 }
 
 /*nav*/
@@ -143,38 +156,38 @@ img {
     text-align: center;
 }
 
-.service{
-    background-color: #E3E3E3;
-    text-align: center;
-}
-
 .subtitle{
     color: #2C2C2C;
     font-size: 2rem;
-    margin-bottom: 25px;
-}
-
-.colaboration{
-    background-color: white;
-    padding-top: 50px;
-    padding-bottom: 25px;
-}
-
-.contact{
-    padding-top: 50px;
-    padding-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .subtitle2{
-    color: #004D9C;
-    /*color: #327ECC;*/
+    color: #327ECC;
     font-size: 2rem;
     margin-bottom: 25px;
+}
+
+.mdownload{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #2C2C2C;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.subtitle3{
+    color: #327ECC;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 .about__paragraph{
     line-height: 1.7;
-    color: black;
+    color: white;
 }
 
 .about_paragraph2{
@@ -186,7 +199,7 @@ img {
 }
 
 .about__main{
-    padding-top: 20px;
+    padding-top: 80px;
     display: grid;
     width: 90%;
     margin: 0 auto;
@@ -204,7 +217,7 @@ img {
     margin: 0 auto;
     
 }
-.about__team1{
+.about__team4{
     text-align: center;
 }
 
@@ -218,6 +231,8 @@ img {
 .knowledge{
     /*background-color: #000000; #e5e5f7;*/
     background-color: #2C2C2C;
+    padding-top: 50px;
+    padding-bottom: 25px;
     /*background-image:  radial-gradient(#454F86 0.5px, transparent 0.5px), radial-gradient(#454F86 0.5px, #e5e5f7 0.5px);*/
     background-size: 20px 20px;
     background-position: 0 0,10px 10px;
@@ -225,20 +240,25 @@ img {
     text-align: justify;
 }
 
-.knowledge__texts{
+.knowledge__paragraph_white{
     color: white;
+    max-width: 700px;
+}
 
+.knowledge__paragraph_black{
+    color: black;
+    max-width: 700px;
 }
 
 .knowledge2{
-    background-color: #2C2C2C;
+    background-color: #E3E3E3;
     padding-top: 50px;
     padding-bottom: 25px;
-    /*background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);*/
+    /*background-image:  radial-gradient(#454F86 0.5px, transparent 0.5px), radial-gradient(#454F86 0.5px, #e5e5f7 0.5px);*/
     background-size: 20px 20px;
-    background-position: 0 0,5px 5px;
+    background-position: 0 0,10px 10px;
     overflow: hidden;
-    text-align: center;
+    text-align: justify;
 }
 
 .knowledge__container{
@@ -249,7 +269,7 @@ img {
 }
 
 .knowledge__picture{
-    max-width: 500px;
+    max-width: 1300px;
 }
 
 .knowledge_paragraph{
@@ -259,4 +279,13 @@ img {
 .knowledge__img{
     width: 100%;
     display: block;
+}
+
+.button_class{
+    display: flex;
+    justify-content: center;
+    /*align-items: flex-end;*/
+    font-size: x-large;
+    border-bottom-color: #2C2C2C;
+
 }

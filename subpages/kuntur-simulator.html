@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>KUNTUR - Simulator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/esat/small_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./kuntur_source/kuntur_estilos.css">
+</head>
+<body>
+ <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="../images/esat/eSATNombre.png" class="nav__title">
+                 <!--<h2 class="nav__title">Plantilla Pagina</h2>-->
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../index.html" class="nav__links">Home</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contact" class="nav__links">Contact</a>
+                </li>
+            </ul>
+            </nav>
+                <!--<section class="hero__container container">
+                    <h1 class="hero__title">Pagina de prueba para elias</h1>
+                    <p class="hero__paragraph">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                        "No hay nadie que ame el dolor mismo, que lo busque, lo encuentre y lo quiera, simplemente porque es el dolor."</p>
+                        <a href="#" class="cta">Comienza ahora</a>
+                </section>-->
+     <div class="button_class">
+      <button id="download_butt" style="background: transparent; position: absolute;
+       bottom: 50px; color: white; border-radius: 15px; width: 200px" >Download!</button>
+    </div>
+     <script>
+        document.getElementById("download_butt").onclick = function() {
+              document.getElementById("download").scrollIntoView({
+            behavior: "smooth"
+          });
+              };
+     </script>
+    </header>
+<main>
+        <section id="kuntur_description" class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__paragraph_white">
+                    <h2 class="subtitle2">KUNTUR: Spacecraft simulation tool</h2>
+                    <p class="knowledge__paragraph">
+                        <b>KUNTUR</b> is a spacecraft simulation tool that includes dynamics,
+                        environment, and main perturbations of space. It has a module to insert subsystems into the
+                        spacecraft and add measurement and attitude control components.
+                    </p>
+                    <br>
+                    <p>
+                        On the other hand, you will be
+                        able to import real data to process it, and use it in the simulation, improving your models and
+                        comparing the final data.
+                    </p>
+                    <br>
+                    <p>
+                    Kuntur is the name of the Andean Condor in Quechua, an ancient language of South America.
+                    </p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="kuntur_source/main_tools.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section id="spacecraft" class="knowledge2">
+            <div class="knowledge__container container">
+                <figure class="knowledge__picture">
+                    <img src="kuntur_source/sc_prop.png" class="knowledge__img">
+                </figure>
+                <div class="knowledge__paragraph_black">
+                    <h2 class="subtitle2">Spacecraft Properties</h2>
+                    <p class="knowledge__paragraph">
+                        The Add Spacecraft tool allows you to define the properties of your model, including the option
+                        to load *.stl models into the 3d display. Among the properties you will find:
+                    </p>
+                    <br>
+                    <ul>
+                      <li>Mass</li>
+                      <li>Inertia</li>
+                      <li>3d Model</li>
+                        <li>Orbit: TLE or Manually</li>
+                      <li>Attitude</li>
+                      <li>Step time propagation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="env_dist" class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__paragraph_white">
+                    <h2 class="subtitle2">Environments & Disturbances</h2>
+                    <p class="knowledge__paragraph">
+                        Kuntur includes models of space environment such as magnetic field (IGRF13),
+                        atmospheric density, and solar flux. Each of the models can activate the disturbance
+                        it generates in the spacecraft dynamics.
+                    </p>
+                                            <br>
+                    <p>
+                        Kuntur also includes ephemeris of the Sun, Moon, and Mars. We are already working on adding more planets and some asteroids!
+                    </p>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="kuntur_source/planets_alpha.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section id="data" class="knowledge2">
+            <div class="knowledge__container container">
+                <figure class="knowledge__picture">
+                    <img src="kuntur_source/data_import_alpha.png" class="knowledge__img">
+                </figure>
+                <div class="knowledge__paragraph_black">
+                    <h2 class="subtitle2">Data Import & Export</h2>
+                    <p class="knowledge__paragraph">
+                        If you have real data from gyros, magnetometers, sun sensors, among others, you can import them
+                        for comparative use in the simulation.
+                         <br>
+                         <br>
+                        Kuntur allows you to import historical files in TLE format, to analyze the change of orbital elements over the life of the spacecraft.
+                        <br>
+                         <br>
+                        When you finalize your work you can save your progress as a project or export the data.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<!--        <section id="sub_comp" class="knowledge">-->
+<!--            <div class="knowledge__container container">-->
+<!--                <div class="knowledge__paragraph_white">-->
+<!--                    <h2 class="subtitle2">Subsystems & Components</h2>-->
+<!--                    <p class="knowledge__paragraph">-->
+<!--                        <b>KUNTUR</b> is a spacecraft simulation tool that includes dynamics,-->
+<!--                        environment, and main perturbations of space. It has a module to insert subsystems into the-->
+<!--                        spacecraft and add measurement and attitude control components. On the other hand, you will be-->
+<!--                        able to import real data to process it, and use it in the simulation, improving your models and-->
+<!--                        comparing the final data.-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        <b>Our main goal</b> is to provide innovative and affordable services and products through a-->
+<!--                        lean development model.<br>-->
+<!--                        <br>-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <figure class="knowledge__picture">-->
+<!--                    <img src="kuntur_source/main_tools.png" class="knowledge__img">-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--        </section>-->
+
+<!--        <section id="visualization" class="knowledge2">-->
+<!--            <div class="knowledge__container container">-->
+<!--                <figure class="knowledge__picture">-->
+<!--                    <img src="kuntur_source/main_tools.png" class="knowledge__img">-->
+<!--                </figure>-->
+<!--                <div class="knowledge__paragraph_black">-->
+<!--                    <h2 class="subtitle2">Visualization</h2>-->
+<!--                    <p class="knowledge__paragraph">-->
+<!--                        <b>Welcome to our website!</b>> We are a team with experience in the field of-->
+<!--                        nanosatellites, GN&C systems, propulsion and subsystem development. Our journey began with-->
+<!--                        the prestigious SUCHAI 2 & 3 and PlantSat Project of the Space and Planetary Exploration Laboratory (SPEL)-->
+<!--                        of the University of Chile, and since then we have grown with the aspiration of becoming a recognized-->
+<!--                        player in the space industry.<br>-->
+<!--                        <br>-->
+<!--                    </p>-->
+<!--                    <p>-->
+<!--                        <b>Our main goal</b> is to provide innovative and affordable services and products through a-->
+<!--                        lean development model.<br>-->
+<!--                        <br>-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section id="download" class="mdownload">
+            <h2 class="subtitle3" >Download KUNTUR! </h2>
+
+        </section><!-- End Contact Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact" style="text-align: center">
+            <h2 class="subtitle">CONTACT</h2>
+          <div class="container2">
+            <div>
+              <p>Contact Us</p>
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="address">
+                    <i class="icofont-google-map"></i>
+                    <h4>Location:</h4>
+                    <p>Santiago, Chile</p>
+                  </div>
+
+                  <div class="email">
+                    <i class="icofont-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>els.obrq@gmail.com</p>
+                  </div>
+
+<!--                  <div class="phone">-->
+<!--                    <i class="icofont-phone"></i>-->
+<!--                    <h4>Call:</h4>-->
+<!--                    <p>+569 78224530</p>-->
+<!--                  </div>-->
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Contact Section -->
+
+    </main>
+</body>
+</html>
